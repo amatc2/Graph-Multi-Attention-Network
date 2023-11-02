@@ -1,0 +1,329 @@
+time_slot=60, P=24, Q=24, L=1, K=8, d=8, train_ratio=0.7, val_ratio=0.1, test_ratio=0.2, batch_size=32, max_epoch=100, patience=10, learning_rate=0.001, decay_epoch=5, traffic_file='x.npy', SE_file='SE.txt', weather_file='Weather1.npy', dist_file='dist.npy', model_file='attention-score', log_file='attention-score'
+loading data...
+trainX: (6081, 24, 75, 2)		trainY: (6081, 24, 75, 2)
+valX:   (829, 24, 75, 2)		valY:   (829, 24, 75, 2)
+testX:  (1704, 24, 75, 2)		testY:  (1704, 24, 75, 2)
+data loaded!
+compiling model...
+trainable parameters: 322,242
+model compiled!
+**** training model ****
+2023-10-11 17:25:41 | epoch: 0001/100, training time: 277.6s, inference time: 11.1s
+train loss: 117.5262, val_loss: 83.7133
+val loss decrease from inf to 83.7133, saving model to attention-score
+2023-10-11 17:30:32 | epoch: 0002/100, training time: 278.7s, inference time: 11.1s
+train loss: 32.2165, val_loss: 30.0915
+val loss decrease from 83.7133 to 30.0915, saving model to attention-score
+2023-10-11 17:35:24 | epoch: 0003/100, training time: 280.2s, inference time: 11.8s
+train loss: 24.2015, val_loss: 20.4206
+val loss decrease from 30.0915 to 20.4206, saving model to attention-score
+2023-10-11 17:41:09 | epoch: 0004/100, training time: 334.0s, inference time: 11.1s
+train loss: 23.8265, val_loss: 19.8391
+val loss decrease from 20.4206 to 19.8391, saving model to attention-score
+2023-10-11 17:46:02 | epoch: 0005/100, training time: 281.5s, inference time: 11.3s
+train loss: 23.2903, val_loss: 13.8059
+val loss decrease from 19.8391 to 13.8059, saving model to attention-score
+2023-10-11 17:50:53 | epoch: 0006/100, training time: 278.9s, inference time: 11.2s
+train loss: 21.9674, val_loss: 14.1235
+2023-10-11 17:55:42 | epoch: 0007/100, training time: 278.5s, inference time: 11.1s
+train loss: 21.3653, val_loss: 15.3286
+2023-10-11 18:00:33 | epoch: 0008/100, training time: 279.0s, inference time: 11.1s
+train loss: 21.8873, val_loss: 13.8899
+2023-10-11 18:05:22 | epoch: 0009/100, training time: 278.2s, inference time: 11.2s
+train loss: 21.1371, val_loss: 13.8842
+2023-10-11 18:10:12 | epoch: 0010/100, training time: 278.4s, inference time: 11.0s
+train loss: 20.3306, val_loss: 14.1417
+2023-10-11 18:15:01 | epoch: 0011/100, training time: 278.3s, inference time: 11.2s
+train loss: 19.6649, val_loss: 13.5380
+val loss decrease from 13.8059 to 13.5380, saving model to attention-score
+2023-10-11 18:19:49 | epoch: 0012/100, training time: 276.5s, inference time: 11.0s
+train loss: 18.5151, val_loss: 12.8643
+val loss decrease from 13.5380 to 12.8643, saving model to attention-score
+2023-10-11 18:24:39 | epoch: 0013/100, training time: 277.9s, inference time: 11.1s
+train loss: 17.5391, val_loss: 12.5757
+val loss decrease from 12.8643 to 12.5757, saving model to attention-score
+2023-10-11 18:29:30 | epoch: 0014/100, training time: 279.7s, inference time: 11.1s
+train loss: 17.0556, val_loss: 12.2649
+val loss decrease from 12.5757 to 12.2649, saving model to attention-score
+2023-10-11 18:34:21 | epoch: 0015/100, training time: 280.1s, inference time: 11.1s
+train loss: 16.6451, val_loss: 12.0264
+val loss decrease from 12.2649 to 12.0264, saving model to attention-score
+2023-10-11 18:41:26 | epoch: 0016/100, training time: 405.9s, inference time: 18.3s
+train loss: 16.4064, val_loss: 11.9009
+val loss decrease from 12.0264 to 11.9009, saving model to attention-score
+2023-10-11 18:47:56 | epoch: 0017/100, training time: 376.7s, inference time: 12.4s
+train loss: 16.2373, val_loss: 11.8501
+val loss decrease from 11.9009 to 11.8501, saving model to attention-score
+2023-10-11 18:55:47 | epoch: 0018/100, training time: 454.7s, inference time: 16.3s
+train loss: 16.1148, val_loss: 11.9412
+2023-10-11 19:03:27 | epoch: 0019/100, training time: 443.4s, inference time: 16.8s
+train loss: 16.0142, val_loss: 11.6858
+val loss decrease from 11.8501 to 11.6858, saving model to attention-score
+2023-10-11 19:11:09 | epoch: 0020/100, training time: 444.1s, inference time: 17.3s
+train loss: 15.9608, val_loss: 11.6085
+val loss decrease from 11.6858 to 11.6085, saving model to attention-score
+2023-10-11 19:18:58 | epoch: 0021/100, training time: 450.8s, inference time: 17.7s
+train loss: 15.8248, val_loss: 11.5461
+val loss decrease from 11.6085 to 11.5461, saving model to attention-score
+2023-10-11 19:26:54 | epoch: 0022/100, training time: 458.1s, inference time: 17.0s
+train loss: 15.7749, val_loss: 11.4947
+val loss decrease from 11.5461 to 11.4947, saving model to attention-score
+2023-10-11 19:34:35 | epoch: 0023/100, training time: 443.5s, inference time: 17.3s
+train loss: 15.7055, val_loss: 11.4711
+val loss decrease from 11.4947 to 11.4711, saving model to attention-score
+2023-10-11 19:42:27 | epoch: 0024/100, training time: 454.8s, inference time: 16.6s
+train loss: 15.6484, val_loss: 11.4643
+val loss decrease from 11.4711 to 11.4643, saving model to attention-score
+2023-10-11 19:50:12 | epoch: 0025/100, training time: 447.8s, inference time: 16.9s
+train loss: 15.5897, val_loss: 11.5133
+2023-10-11 19:55:40 | epoch: 0026/100, training time: 315.7s, inference time: 11.8s
+train loss: 15.5412, val_loss: 11.4730
+2023-10-11 20:00:42 | epoch: 0027/100, training time: 290.2s, inference time: 12.1s
+train loss: 15.5527, val_loss: 11.5016
+2023-10-11 20:05:48 | epoch: 0028/100, training time: 293.9s, inference time: 11.6s
+train loss: 15.4840, val_loss: 11.3890
+val loss decrease from 11.4643 to 11.3890, saving model to attention-score
+2023-10-11 20:10:47 | epoch: 0029/100, training time: 288.0s, inference time: 11.3s
+train loss: 15.4421, val_loss: 11.3967
+2023-10-11 20:16:00 | epoch: 0030/100, training time: 301.0s, inference time: 11.9s
+train loss: 15.4115, val_loss: 11.2196
+val loss decrease from 11.3890 to 11.2196, saving model to attention-score
+2023-10-11 20:21:52 | epoch: 0031/100, training time: 331.7s, inference time: 19.4s
+train loss: 15.3640, val_loss: 11.2686
+2023-10-11 20:27:34 | epoch: 0032/100, training time: 330.6s, inference time: 11.7s
+train loss: 15.3185, val_loss: 11.2726
+2023-10-11 20:34:01 | epoch: 0033/100, training time: 371.5s, inference time: 14.9s
+train loss: 15.2667, val_loss: 11.2944
+2023-10-11 20:40:43 | epoch: 0034/100, training time: 389.1s, inference time: 12.6s
+train loss: 15.2265, val_loss: 11.2048
+val loss decrease from 11.2196 to 11.2048, saving model to attention-score
+2023-10-11 20:46:55 | epoch: 0035/100, training time: 357.7s, inference time: 13.7s
+train loss: 15.1660, val_loss: 11.1198
+val loss decrease from 11.2048 to 11.1198, saving model to attention-score
+2023-10-11 20:53:14 | epoch: 0036/100, training time: 362.3s, inference time: 15.6s
+train loss: 15.0996, val_loss: 11.0357
+val loss decrease from 11.1198 to 11.0357, saving model to attention-score
+2023-10-11 20:58:56 | epoch: 0037/100, training time: 329.2s, inference time: 11.7s
+train loss: 15.0548, val_loss: 11.0651
+2023-10-11 21:06:09 | epoch: 0038/100, training time: 417.0s, inference time: 14.7s
+train loss: 15.0189, val_loss: 11.0283
+val loss decrease from 11.0357 to 11.0283, saving model to attention-score
+2023-10-11 21:13:47 | epoch: 0039/100, training time: 444.9s, inference time: 12.5s
+train loss: 14.9821, val_loss: 11.0065
+val loss decrease from 11.0283 to 11.0065, saving model to attention-score
+2023-10-11 21:18:47 | epoch: 0040/100, training time: 287.4s, inference time: 11.1s
+train loss: 14.9566, val_loss: 10.9688
+val loss decrease from 11.0065 to 10.9688, saving model to attention-score
+2023-10-11 21:23:38 | epoch: 0041/100, training time: 279.5s, inference time: 11.0s
+train loss: 14.9173, val_loss: 10.9629
+val loss decrease from 10.9688 to 10.9629, saving model to attention-score
+2023-10-11 21:28:28 | epoch: 0042/100, training time: 279.1s, inference time: 11.0s
+train loss: 14.9032, val_loss: 10.8990
+val loss decrease from 10.9629 to 10.8990, saving model to attention-score
+2023-10-11 21:33:15 | epoch: 0043/100, training time: 275.5s, inference time: 10.9s
+train loss: 14.8685, val_loss: 10.9378
+2023-10-11 21:38:03 | epoch: 0044/100, training time: 277.1s, inference time: 11.0s
+train loss: 14.8542, val_loss: 10.8745
+val loss decrease from 10.8990 to 10.8745, saving model to attention-score
+2023-10-11 21:42:51 | epoch: 0045/100, training time: 276.8s, inference time: 10.9s
+train loss: 14.8178, val_loss: 10.8671
+val loss decrease from 10.8745 to 10.8671, saving model to attention-score
+2023-10-11 21:47:40 | epoch: 0046/100, training time: 277.7s, inference time: 11.1s
+train loss: 14.8007, val_loss: 10.8331
+val loss decrease from 10.8671 to 10.8331, saving model to attention-score
+2023-10-11 21:52:27 | epoch: 0047/100, training time: 275.4s, inference time: 11.0s
+train loss: 14.7909, val_loss: 10.8678
+2023-10-11 21:57:13 | epoch: 0048/100, training time: 274.9s, inference time: 11.0s
+train loss: 14.8022, val_loss: 10.8135
+val loss decrease from 10.8331 to 10.8135, saving model to attention-score
+2023-10-11 22:02:00 | epoch: 0049/100, training time: 275.9s, inference time: 10.9s
+train loss: 14.7614, val_loss: 10.7966
+val loss decrease from 10.8135 to 10.7966, saving model to attention-score
+2023-10-11 22:06:46 | epoch: 0050/100, training time: 275.5s, inference time: 10.9s
+train loss: 14.7436, val_loss: 10.7815
+val loss decrease from 10.7966 to 10.7815, saving model to attention-score
+2023-10-11 22:11:34 | epoch: 0051/100, training time: 276.2s, inference time: 11.1s
+train loss: 14.7173, val_loss: 10.7849
+2023-10-11 22:16:20 | epoch: 0052/100, training time: 275.5s, inference time: 10.9s
+train loss: 14.7140, val_loss: 10.7708
+val loss decrease from 10.7815 to 10.7708, saving model to attention-score
+2023-10-11 22:21:07 | epoch: 0053/100, training time: 275.1s, inference time: 11.0s
+train loss: 14.6998, val_loss: 10.8171
+2023-10-11 22:25:54 | epoch: 0054/100, training time: 275.6s, inference time: 11.0s
+train loss: 14.6826, val_loss: 10.7693
+val loss decrease from 10.7708 to 10.7693, saving model to attention-score
+2023-10-11 22:30:41 | epoch: 0055/100, training time: 276.4s, inference time: 11.0s
+train loss: 14.6774, val_loss: 10.7586
+val loss decrease from 10.7693 to 10.7586, saving model to attention-score
+2023-10-11 22:35:26 | epoch: 0056/100, training time: 274.1s, inference time: 10.9s
+train loss: 14.6575, val_loss: 10.7521
+val loss decrease from 10.7586 to 10.7521, saving model to attention-score
+2023-10-11 22:40:11 | epoch: 0057/100, training time: 273.3s, inference time: 11.0s
+train loss: 14.6499, val_loss: 10.7501
+val loss decrease from 10.7521 to 10.7501, saving model to attention-score
+2023-10-11 22:44:57 | epoch: 0058/100, training time: 274.4s, inference time: 11.0s
+train loss: 14.6451, val_loss: 10.7543
+2023-10-11 22:49:43 | epoch: 0059/100, training time: 275.0s, inference time: 10.9s
+train loss: 14.6411, val_loss: 10.7462
+val loss decrease from 10.7501 to 10.7462, saving model to attention-score
+2023-10-11 22:54:30 | epoch: 0060/100, training time: 275.8s, inference time: 11.0s
+train loss: 14.6253, val_loss: 10.7408
+val loss decrease from 10.7462 to 10.7408, saving model to attention-score
+2023-10-11 22:59:18 | epoch: 0061/100, training time: 276.5s, inference time: 10.9s
+train loss: 14.6152, val_loss: 10.7294
+val loss decrease from 10.7408 to 10.7294, saving model to attention-score
+2023-10-11 23:04:05 | epoch: 0062/100, training time: 276.2s, inference time: 11.0s
+train loss: 14.6192, val_loss: 10.7224
+val loss decrease from 10.7294 to 10.7224, saving model to attention-score
+2023-10-11 23:08:51 | epoch: 0063/100, training time: 274.7s, inference time: 11.0s
+train loss: 14.6144, val_loss: 10.7184
+val loss decrease from 10.7224 to 10.7184, saving model to attention-score
+2023-10-11 23:13:38 | epoch: 0064/100, training time: 276.1s, inference time: 11.1s
+train loss: 14.6077, val_loss: 10.7275
+2023-10-11 23:18:26 | epoch: 0065/100, training time: 276.9s, inference time: 11.0s
+train loss: 14.5961, val_loss: 10.7164
+val loss decrease from 10.7184 to 10.7164, saving model to attention-score
+2023-10-11 23:23:13 | epoch: 0066/100, training time: 275.9s, inference time: 10.9s
+train loss: 14.5955, val_loss: 10.7159
+val loss decrease from 10.7164 to 10.7159, saving model to attention-score
+2023-10-11 23:27:59 | epoch: 0067/100, training time: 274.4s, inference time: 11.0s
+train loss: 14.5925, val_loss: 10.7237
+2023-10-11 23:32:47 | epoch: 0068/100, training time: 276.8s, inference time: 11.0s
+train loss: 14.5847, val_loss: 10.7120
+val loss decrease from 10.7159 to 10.7120, saving model to attention-score
+2023-10-11 23:37:35 | epoch: 0069/100, training time: 276.2s, inference time: 11.1s
+train loss: 14.5831, val_loss: 10.7193
+2023-10-11 23:42:22 | epoch: 0070/100, training time: 275.9s, inference time: 10.9s
+train loss: 14.5741, val_loss: 10.7185
+2023-10-11 23:47:08 | epoch: 0071/100, training time: 275.0s, inference time: 11.0s
+train loss: 14.5702, val_loss: 10.7026
+val loss decrease from 10.7120 to 10.7026, saving model to attention-score
+2023-10-11 23:51:55 | epoch: 0072/100, training time: 276.0s, inference time: 11.0s
+train loss: 14.5727, val_loss: 10.7157
+2023-10-11 23:56:43 | epoch: 0073/100, training time: 276.8s, inference time: 11.1s
+train loss: 14.5659, val_loss: 10.7058
+2023-10-12 00:01:32 | epoch: 0074/100, training time: 278.0s, inference time: 10.9s
+train loss: 14.5561, val_loss: 10.7156
+2023-10-12 00:06:21 | epoch: 0075/100, training time: 277.7s, inference time: 11.1s
+train loss: 14.5495, val_loss: 10.7068
+2023-10-12 00:11:10 | epoch: 0076/100, training time: 277.7s, inference time: 11.0s
+train loss: 14.5434, val_loss: 10.7105
+2023-10-12 00:15:57 | epoch: 0077/100, training time: 275.7s, inference time: 11.1s
+train loss: 14.5468, val_loss: 10.6985
+val loss decrease from 10.7026 to 10.6985, saving model to attention-score
+2023-10-12 00:20:46 | epoch: 0078/100, training time: 277.9s, inference time: 11.0s
+train loss: 14.5479, val_loss: 10.7085
+2023-10-12 00:25:34 | epoch: 0079/100, training time: 277.1s, inference time: 11.3s
+train loss: 14.5419, val_loss: 10.7089
+2023-10-12 00:30:22 | epoch: 0080/100, training time: 276.4s, inference time: 11.0s
+train loss: 14.5366, val_loss: 10.6976
+val loss decrease from 10.6985 to 10.6976, saving model to attention-score
+2023-10-12 00:35:10 | epoch: 0081/100, training time: 277.4s, inference time: 11.0s
+train loss: 14.5246, val_loss: 10.6999
+2023-10-12 00:39:59 | epoch: 0082/100, training time: 276.9s, inference time: 11.0s
+train loss: 14.5245, val_loss: 10.6858
+val loss decrease from 10.6976 to 10.6858, saving model to attention-score
+2023-10-12 00:44:45 | epoch: 0083/100, training time: 275.6s, inference time: 10.9s
+train loss: 14.5198, val_loss: 10.6953
+2023-10-12 00:49:34 | epoch: 0084/100, training time: 277.1s, inference time: 11.0s
+train loss: 14.5140, val_loss: 10.6865
+2023-10-12 00:54:21 | epoch: 0085/100, training time: 276.4s, inference time: 11.0s
+train loss: 14.5099, val_loss: 10.6899
+2023-10-12 00:59:10 | epoch: 0086/100, training time: 277.9s, inference time: 10.9s
+train loss: 14.5086, val_loss: 10.6761
+val loss decrease from 10.6858 to 10.6761, saving model to attention-score
+2023-10-12 01:03:57 | epoch: 0087/100, training time: 276.0s, inference time: 11.0s
+train loss: 14.5011, val_loss: 10.6840
+2023-10-12 01:08:45 | epoch: 0088/100, training time: 276.5s, inference time: 11.0s
+train loss: 14.5014, val_loss: 10.6826
+2023-10-12 01:13:32 | epoch: 0089/100, training time: 276.2s, inference time: 11.0s
+train loss: 14.4937, val_loss: 10.6798
+2023-10-12 01:18:21 | epoch: 0090/100, training time: 277.8s, inference time: 11.0s
+train loss: 14.4876, val_loss: 10.6789
+2023-10-12 01:23:08 | epoch: 0091/100, training time: 275.9s, inference time: 11.0s
+train loss: 14.4835, val_loss: 10.6710
+val loss decrease from 10.6761 to 10.6710, saving model to attention-score
+2023-10-12 01:27:59 | epoch: 0092/100, training time: 279.0s, inference time: 11.2s
+train loss: 14.4897, val_loss: 10.6713
+2023-10-12 01:32:46 | epoch: 0093/100, training time: 276.2s, inference time: 11.3s
+train loss: 14.4782, val_loss: 10.6683
+val loss decrease from 10.6710 to 10.6683, saving model to attention-score
+2023-10-12 01:37:33 | epoch: 0094/100, training time: 275.5s, inference time: 11.0s
+train loss: 14.4726, val_loss: 10.6727
+2023-10-12 01:42:22 | epoch: 0095/100, training time: 277.5s, inference time: 10.9s
+train loss: 14.4707, val_loss: 10.6659
+val loss decrease from 10.6683 to 10.6659, saving model to attention-score
+2023-10-12 01:47:10 | epoch: 0096/100, training time: 277.3s, inference time: 11.0s
+train loss: 14.4709, val_loss: 10.6690
+2023-10-12 01:51:57 | epoch: 0097/100, training time: 275.7s, inference time: 10.9s
+train loss: 14.4603, val_loss: 10.6585
+val loss decrease from 10.6659 to 10.6585, saving model to attention-score
+2023-10-12 01:56:44 | epoch: 0098/100, training time: 275.4s, inference time: 11.1s
+train loss: 14.4570, val_loss: 10.6653
+2023-10-12 02:01:29 | epoch: 0099/100, training time: 274.3s, inference time: 10.9s
+train loss: 14.4569, val_loss: 10.6710
+2023-10-12 02:06:19 | epoch: 0100/100, training time: 278.4s, inference time: 11.0s
+train loss: 14.4480, val_loss: 10.6639
+**** testing model ****
+loading model from attention-score
+model restored!
+evaluating...
+testing time: 23.5s
+                MAE		RMSE		MAPE
+train            14.09		33.92		216.01%
+val              10.73		29.45		263.23%
+test             12.73		33.50		237.94%
+arr              12.26		31.68		224.08%
+dep              13.23		35.32		252.55%
+performance in each prediction step
+arr: step: 01         12.37		10.78		14.53		12.13
+arr: step: 02         12.41		10.81		14.55		12.16
+arr: step: 03         12.39		10.80		14.56		12.16
+arr: step: 04         12.40		10.81		14.57		12.16
+arr: step: 05         12.41		10.81		14.57		12.17
+arr: step: 06         12.45		10.81		14.59		12.18
+arr: step: 07         12.47		10.83		14.57		12.20
+arr: step: 08         12.48		10.84		14.58		12.21
+arr: step: 09         12.50		10.86		14.60		12.23
+arr: step: 10         12.50		10.88		14.60		12.24
+arr: step: 11         12.52		10.89		14.61		12.25
+arr: step: 12         12.54		10.89		14.60		12.25
+arr: step: 13         12.56		10.89		14.60		12.26
+arr: step: 14         12.58		10.88		14.59		12.26
+arr: step: 15         12.60		10.88		14.55		12.26
+arr: step: 16         12.61		10.88		14.56		12.27
+arr: step: 17         12.64		10.88		14.58		12.28
+arr: step: 18         12.66		10.88		14.57		12.28
+arr: step: 19         12.69		10.87		14.57		12.29
+arr: step: 20         12.75		10.87		14.54		12.31
+arr: step: 21         12.80		10.91		14.54		12.34
+arr: step: 22         12.86		10.93		14.57		12.38
+arr: step: 23         12.94		10.96		14.62		12.43
+arr: step: 24         13.00		10.97		14.61		12.45
+dep: step: 01         11.19		11.91		18.96		13.07
+dep: step: 02         11.21		11.94		19.02		13.10
+dep: step: 03         11.20		11.92		19.04		13.09
+dep: step: 04         11.25		11.92		19.06		13.11
+dep: step: 05         11.27		11.98		19.08		13.15
+dep: step: 06         11.28		11.99		19.11		13.17
+dep: step: 07         11.30		12.01		19.13		13.18
+dep: step: 08         11.31		12.02		19.09		13.19
+dep: step: 09         11.31		12.04		19.07		13.19
+dep: step: 10         11.31		12.05		19.06		13.19
+dep: step: 11         11.33		12.06		19.05		13.20
+dep: step: 12         11.33		12.06		19.04		13.20
+dep: step: 13         11.34		12.06		19.04		13.20
+dep: step: 14         11.36		12.06		19.05		13.21
+dep: step: 15         11.39		12.07		19.04		13.22
+dep: step: 16         11.40		12.07		19.03		13.23
+dep: step: 17         11.43		12.07		19.03		13.24
+dep: step: 18         11.46		12.08		19.05		13.26
+dep: step: 19         11.50		12.07		19.03		13.26
+dep: step: 20         11.58		12.10		19.07		13.31
+dep: step: 21         11.67		12.14		19.11		13.37
+dep: step: 22         11.74		12.17		19.15		13.42
+dep: step: 23         11.83		12.21		19.17		13.47
+dep: step: 24         11.92		12.24		19.14		13.51
+average arr:          12.59		10.87		14.58		12.26
+average dep:          11.41		12.05		19.07		13.23
+total time: 527.5min
